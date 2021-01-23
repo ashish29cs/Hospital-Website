@@ -1,0 +1,272 @@
+@charset "utf-8";
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+@font-face{
+	font-family: Gotu;
+	src :url(../font/Gotu-Regular.ttf);
+}
+@font-face{
+	font-family: Muli;
+	src:url(../font/Muli-VariableFont_wght.ttf);
+}
+body{
+	width: 100%;
+	height: 100%;
+	font-family: Gotu;
+	background-color: lightblue;
+	color: teal;
+}
+
+.w-80{
+	width: 80%;
+	height: auto;
+	margin: auto;
+	padding: 10px 10px;
+	font-size: 20px;
+}
+
+header{
+	width: 100%;
+	height: 55px;
+	background: teal;
+	float: left;
+}
+
+header .menu{
+	width: 80%;
+	height: 55px;
+	margin: auto;
+	padding: 0 10px;
+}
+
+header .menu .brand-name{
+	width: 35%;
+	float: left;
+}
+header .menu .brand-name a{
+	text-decoration: none;
+}
+header .menu .brand-name h2{
+	font-family: Gotu;
+	font-size: 30px;
+	color: maroon;
+	align-content: center;
+	margin: 8px 10px;
+	padding: 2px 10px;
+}
+
+header .menu nav{
+	width: 65%;
+	font-weight: bold;
+	float: right;
+	display: flex;
+	justify-content: space-around;
+}
+
+header .menu nav ul{
+	list-style: none;
+}
+
+header .menu nav ul li{
+	display: inline-block;
+	margin: 5px 5px;
+	padding: 2px 10px;
+	font-size: 28PX;
+}
+
+header .menu nav ul li:hover{
+	border:none;
+	border-bottom: 3px solid maroon;
+}
+
+header .menu nav ul li:hover a{
+	color: #00bcd4;
+}
+
+header .menu nav ul li a{
+	color: lightblue;
+	text-decoration: none;
+	font-family: Gotu;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+
+section{
+	width: 100%;
+	float: left;
+}
+section .section-img{
+	width: 100%;
+	height: 480px;
+	background: url(../images/1.jpg) no-repeat;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+section .section-bg-box{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+	text-align: center;
+	padding: 150px 0;
+}
+section .section-bg-box h1{
+	background: lightblue;
+	color: teal;
+	font-size: 35px;
+	width: 50%;
+	margin: auto;
+}
+section .section-bg-box h2{
+	background: pink;
+	color: maroon;
+	width: 50%;
+	margin: auto;
+	font-size: 20px;
+}
+section .welcome-text{
+	font-size: 35px;
+    text-transform: uppercase;
+    background: maroon;
+    width: 60%;
+    padding: 0 5px;
+    color: white;
+}
+section p{
+	font-size: 22px;
+	text-align: justify;
+	color: black;
+}
+section ul{
+	padding: 0;
+	margin-left:10px;
+	margin-top: 20px;
+	list-style: none;
+}
+section ul li{
+	font-size: 20px;
+	line-height: 30px;
+	color:black;
+}
+section h2{
+	font-size: 30px;
+}
+section .about-box{
+	width: 100%;
+}
+section .about-box p{
+	font-size: 20px;
+}
+section .about-box div:nth-child(1){
+	width: 60%;
+	float: left;
+	padding: 10px;
+}
+section .about-box div:nth-child(2){
+	width: 40%;
+	float: left;
+	padding: 10px;
+}
+
+section .Covid-19 {
+	font-size: 35px;
+	width: 60%;
+    color: maroon;
+}
+
+section .form-box{
+	padding: 20px;
+}
+section .form-box .gallery{
+	width: 100%;
+	height: 200px;
+	padding: 0 5px;
+}
+section .form-box .gallery div{
+  width: 25%;
+  height: 100%;
+  float: left;
+  padding: 5px;
+}
+section .form-box .gallery div img{
+	border-radius: 10px;
+}
+section .form-box form{
+	margin-top: 20px;
+}
+section .form-box input:focus,textarea:focus,button:focus{
+	outline: none;
+}
+section .form-box input,textarea{
+	width: 50%;
+	height: 35px;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	padding: 0 10px;
+	font-family: Gotu;
+	font-size: 16px;
+}
+textarea{
+	height: 100px;
+}
+section .form-box form #register-btn,#login-btn,#contact-btn{
+	font-family: Muli;
+	font-size: 20px;
+	color: white;
+	background-color: teal;
+	padding: 10px;
+	border:none;
+	cursor: pointer;
+	border-radius: 3px;
+	margin-bottom: 120px;
+}
+section .form-box form #login-btn{
+	background: teal;
+}
+section .form-box form #contact-btn{
+	background: teal;
+}
+section .form-box form #register-btn{
+	background: teal;
+}
+section .form-box form #contact-btn:hover{
+	background: #080896;
+}
+section .form-box form #login-btn:hover{
+	background: #9E0707;
+}
+section .form-box form #register-btn:hover{
+	background: teal;
+}
+
+footer{
+	width: 100%;
+	background: maroon;
+	color: white;
+	padding-bottom: 5px;
+	float: left;
+	margin: 10px;
+}
+
+footer .footer-box{
+	width: 25%;
+	height: 50%;
+	text-align: center;
+	float: left;
+}
+
+footer .footer-box a{
+	display: block;
+	font-family: Gotu;
+	color: white;
+	font-size: 20px;
+	text-transform: capitalize;
+	text-align: center;
+}
+footer .footer-box a:hover{
+	text-decoration: none;
+	color: teal;
+}
